@@ -61,23 +61,10 @@
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
 
+    <script src="firebaseConfig.js"></script>
     <script>
-      // Import the functions you need from the SDKs you need
-      // import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
-
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      var config = {
-        apiKey: "AIzaSyBv_IH8OEGdT6W18PHxqjzNLqdw27Mjh0M",
-        authDomain: "udemy-js-f96da.firebaseapp.com",
-        projectId: "udemy-js-f96da",
-        storageBucket: "udemy-js-f96da.firebasestorage.app",
-        messagingSenderId: "1010759039661",
-        appId: "1:1010759039661:web:c4e0eb8c8b8d16fb0aa424",
-      };
-      firebase.initializeApp(config);
+      // Firebase config is now loaded from firebaseConfig.js
+      firebase.initializeApp(firebaseConfig);
       const db = firebase.firestore();
     </script>
 
